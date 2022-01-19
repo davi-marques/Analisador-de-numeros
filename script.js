@@ -36,6 +36,9 @@ function adicionar() {
 function finalizar() {
     if (valores.length == 0) {
         alert('Adicione valores antes de finalizar!')
+    } else if(valores.length == 1) {
+        let Valor = valores[0]
+        res.innerHTML = `Somente o valor ${Valor} foi digitado.`
     } else {
         let tot = valores.length
         let maior = valores[0]
